@@ -100,16 +100,7 @@ const DashboardA = () => {
   };
 
   // Efecto para cargar los datos cuando cambie el año
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    const fetchDashboardData = async () => {
-      try {
-        // ... tu código actual de fetchDashboardData
-      } catch (error) {
-        console.error('Error fetching dashboard data:', error);
-      }
-    };
-  
     fetchDashboardData();
   }, []);
 
