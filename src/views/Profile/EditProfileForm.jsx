@@ -10,7 +10,7 @@ const EditarPerfil = () => {
   const [contrasena, setContrasena] = useState('');
   const [fechaNacimiento, setFechaNacimiento] = useState(userInfo.fecha_nac);
   const [genero, setGenero] = useState(userInfo.genero);
-  const [imagenPerfil, setImagenPerfil] = useState(null);
+  const [setImagenPerfil] = useState(null);
   const [imagenPerfilBase64, setImagenPerfilBase64] = useState(null); // Para almacenar la imagen en formato base64
 
   useEffect(() => {

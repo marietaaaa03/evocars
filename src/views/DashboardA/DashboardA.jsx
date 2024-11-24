@@ -102,7 +102,7 @@ const DashboardA = () => {
   // Efecto para cargar los datos cuando cambie el año
   useEffect(() => {
     fetchDashboardData();
-  }, [selectedYear]);
+  }, [fetchDashboardData]);
 
   // Renderizado condicional para estados de carga y error
   if (loading) {

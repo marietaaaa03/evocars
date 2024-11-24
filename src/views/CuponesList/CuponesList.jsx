@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link, useNavigate } from 'react-router-dom'; // Importar useNavigate
+import { useNavigate } from 'react-router-dom'; // Importar useNavigate
 import './CuponesList.css';
 
 const CuponesList = () => {
   const [cupones, setCupones] = useState([]);
   const [userRole, setUserRole] = useState(0);
-  const [userId, setUserId] = useState(null);
+  const [setUserId] = useState(null);
   const navigate = useNavigate(); // Inicializar useNavigate
 
   useEffect(() => {

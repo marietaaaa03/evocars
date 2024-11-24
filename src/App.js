@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './views/Home/Home';
 import Cars from './views/Cars/Cars';
@@ -21,7 +21,6 @@ import RenterPanel from './views/RenterPanel/RenterPanel';
 import RenterRegister from './views/RenterRegister/RenterRegister';
 import DashboardA from './views/DashboardA/DashboardA';
 import DashboardR from './views/DashboardR/DashboardR';
-import RenterRoute from './components/RenterRoute';
 import ConnectionStatus from "./components/ConnectionStatus"; // NUEVO CAMBIO
 
 // Nuevas importaciones para ofertas y cupones

@@ -136,7 +136,7 @@ function Cars() {
             const valorDescuento = parseFloat(car.valor_descuento) || 0; // Asegura que sea un número
             const precioConOferta = parseFloat(car.precio_con_oferta) || precioDiario; // Si no hay precio con oferta, usa el precio diario
 
-            const precioConDescuento = precioDiario - (precioDiario * (valorDescuento / 100));
+            //const precioConDescuento = precioDiario - (precioDiario * (valorDescuento / 100));
             const tieneDescuento = precioConOferta < precioDiario; // Verifica si hay un descuento
 
             return (

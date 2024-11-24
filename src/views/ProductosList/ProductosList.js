@@ -6,7 +6,7 @@ import './ProductosList.css';
 const ProductosList = () => {
   const [cars, setCars] = useState([]);
   const [userRole, setUserRole] = useState(0);
-  const [userId, setUserId] = useState(null);
+  const [setUserId] = useState(null);
   const [categories, setCategories] = useState([]); // Agregar estado para categorías
 
   useEffect(() => {
