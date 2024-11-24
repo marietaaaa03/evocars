@@ -9,6 +9,7 @@ const ProductosList = () => {
   const [setUserId] = useState(null);
   const [categories, setCategories] = useState([]); // Agregar estado para categorías
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
@@ -54,7 +55,7 @@ const ProductosList = () => {
     } else {
       console.error('No se encontró userinfo en localStorage');
     }
-  }, []);
+  }, [setUserId]);
 
   const deleteCar = (id_auto) => {
     axios.delete(`http://localhost:8080/api/autos/${id_auto}`)

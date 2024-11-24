@@ -9,6 +9,7 @@ const CuponesList = () => {
   const [setUserId] = useState(null);
   const navigate = useNavigate(); // Inicializar useNavigate
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
@@ -43,7 +44,7 @@ const CuponesList = () => {
     } else {
       console.error('No se encontró userinfo en localStorage');
     }
-  }, []);
+  }, [setUserId]);
 
   const deleteCupon = (id_cupon) => {
     axios.delete(`http://localhost:8080/api/cupones/${id_cupon}`)
