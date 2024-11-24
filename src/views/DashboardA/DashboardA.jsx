@@ -100,9 +100,10 @@ const DashboardA = () => {
   };
 
   // Efecto para cargar los datos cuando cambie el año
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchDashboardData();
-  }, []);
+}, [fetchDashboardData]); // Añadimos la dependencia
 
   // Renderizado condicional para estados de carga y error
   if (loading) {
